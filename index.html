@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Formulario-encuesta</title>
+</head>
+<body>
+    <style>
+        h1 {
+          font-family: Lobster, Monospace;
+        }
+     
+      </style>
+      <header >  <div class="container-fluid">
+      <h2>Formulario de inscripción</h2></div>
+      <div class="container-fluid">
+        <H1  id="title">Club de lectura Don Quijote RockStar</H1></div>
+        
+        <div class="container-fluid">
+        <H2>Llena este formulario para ser parte del club</H2>
+        <H3>Grupo del Club de Lectura "Don Quijote Rockstar"; todos los miércoles a las 7:00 p.m</H3>
+        </div>
+        <div class="container-fluid">
+        <p id="description">El club de lectura es una iniciativa de la Universidad Santo Tomás para incentivar la lectura fuera de las aulas</p>
+        </div>
+       </header>
+        <div class="container-fluid "><h1>Mi Perfil: </h1></div>
+
+    <div class="container-fluid ">
+        <form id="survey-form">
+        <ol class="list-unstyled>
+            <li><label id="name-label" for="name">Nombre *:</label><input type="text" id="name" placeholder="nombre completo"   required></li>
+            <li><label id="age-label" for="age">Edad*:</label><input type="number"  id="age-label" placeholder="16" min="16" max="65" required></li>
+            <p><small class="text-muted">El club va dirigido a personas mayores de 16 años</small></p>
+            <li><label id="email-label" for="email">Dirección e-mail *:</label><input type="email" pattern=".+@gmail.com" name="email" id="email" placeholder="correo electronico" title="no es un correo gmail" required></li>
+            <li><label id="number-label" for="number">Número de contacto:</label> <input type="number" id="number" id="number-label" placeholder="Tel" ></li>
+            <li>¿De que area de la comunidad tomasina eres?
+                <select id="dropdown">
+                <option>Administrativo</option> 
+                <option>Estudiante</option> 
+                <option>Otros</option> 
+            </select>
+            </li>
+            </ol>
+         </form></div>
+    
+    <div id="options" class="container-fluid text-center">
+    <h2>¿Qué genero te llama la atención</h2>
+     <ul id="lista" class="list-unstyled">
+        <li><i class="bi bi-cloud-moon-fill"></i> Terror <input type="radio" name="radio-bottom"></li>
+        <li><i class="bi bi-tsunami"></i> Fantasía <input type="radio" name="radio-bottom"></li>
+        <li><i class="bi bi-controller"></i> Ciencia ficción <input type="radio"name="radio-bottom"></li>
+        <li><i class="bi bi-suit-heart"></i> Romance <input type="radio" name="radio-bottom"></li>
+        </ul>
+    </div>
+    <div id="check" class="container-fluid text-center">
+        <h2>¿Qué te gustaría leer?</h2>
+         <ul class="list-inline-item">
+            Novela<input type="checkbox" value="check-box">
+            Cuento<input type="checkbox" value="check-box">
+            Poesía<input type="checkbox" value="check-box">
+            Comic<input type="checkbox" value="check-box">
+            </ul>
+        </div>
+    <div class="container-fluid">
+    <p class="lead">Escribenos si tienes algún título o autor en mente:</p>
+            <textarea placeholder="Sugerencias literarias aquí:"></textarea></div>
+    </body>
+    
+    <footer>
+        <div class="container-fluid text-center">
+      </br> 
+            <div class="container-fluid">Terminaste?  <input class="btn btn-primary" type='submit'> </div>
+             <h1>¡¡Bienvenido <i class="bi bi-book"></i>!!</h1></footer>
+             <p><small class="text-muted"> Los campos marcados con * son obligatorios</small></p>
+        </div>
+    </footer>
+    </html>
+    
